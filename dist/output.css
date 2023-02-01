@@ -3165,6 +3165,10 @@ html {
        column-gap: 3rem;
 }
 
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
 .overflow-x-scroll {
   overflow-x: scroll;
 }
