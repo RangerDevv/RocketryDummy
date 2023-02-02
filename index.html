@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
-<body>
+<body class="snap-y snap-mandatory">
     <!-- Video Background -->
     <video id="Twinkling_Stars" class="absolute z-10 w-auto min-w-full min-h-none max-w-none" loop autoplay muted src="./Image/Stars.mp4">
         <!-- <source src="./image/Stars.mp4"> -->
@@ -44,7 +44,7 @@
     </div>
     </nav>
     <!-- ______________________________________________________________ -->
-    <header class="text-white pt-32 md:p-24 flex flex-row justify-center md:justify-start h-screen">
+    <header class="text-white pt-32 md:p-24 flex flex-row justify-center md:justify-start h-screen snap-start">
         <div class="flex flex-col gap-11">
         <div class=" flex flex-col gap-11">
         <h1 class="text-3xl text-center md:text-left font-bold w-96 md:w-[30rem]" id="Header"></h1>
@@ -59,8 +59,7 @@
             <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_qogkaqmb.json"  background="transparent"  speed="0.5"  style="width: 75%; height: 75%;"  loop autoplay></lottie-player>
         </div>
     </header>
-    <div>
-    <div class="text-white pt-24 md:p-24 flex flex-col md:flex-row justify-center md:justify-start w-screen h-screen" id="About" data-aos="fade-down-right">
+    <div class="text-white pt-24 md:p-24 flex flex-col md:flex-row justify-center md:justify-start w-screen h-screen snap-start" id="About" data-aos="fade-down-right">
         <div class="flex flex-col gap-11 order-2 md:order-1">
         <div class="flex flex-col gap-11">
             <h1 class="text-3xl text-center md:text-left font-bold w-screen md:w-[30rem]">Our Mission</h1>
@@ -75,7 +74,7 @@
              <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_PF7Jq8VA8O.json"  background="transparent"  speed="0.5"  style="width: 75%; height: 75%;"  loop autoplay></lottie-player>
         </div>
     </div>
-    <div class="w-screen h-screen">
+    <div class="w-screen h-screen snap-start">
     <div class="text-white pt-24 md:p-24 flex flex-col md:flex-row justify-center md:justify-start" data-aos="fade-down-left">
         <div class="flex flex-col gap-11 order-2 md:order-2">
         <div class="flex flex-col gap-11 justify-end">
@@ -89,7 +88,6 @@
             <!-- <img id="Images" src="./Image/Planet8-removebg-preview.png"> -->
             <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_of1c2696.json"  background="transparent"  speed="0.5"  style="width: 75%; height: 75%;"  loop autoplay></lottie-player>
         </div>
-    </div>
     </div>
     </div>
     <!-- <div class="flex flex-col">
@@ -117,7 +115,8 @@
             <div class="flex justify-center pt-14"><a href="./knowBeforeYouGo.html"><button class=" btn btn-success">View our planning⫸</button></a></div>
 			</div>
     </div> -->
-    <div class=" flex flex-col w-screen h-screen">
+    <div class=" flex flex-col w-screen h-screen snap-start" id="AC">
+        <p class="text-3xl text-center font-bold pt-24">Why should you join?</p>
         <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-24 gap-y-5 place-items-center">
             <div class="card w-96 h-80 bg-slate-900 flex flex-col justify-center text-white items-center"data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
                 <figure class="pt-10">
