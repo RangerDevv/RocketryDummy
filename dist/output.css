@@ -3073,6 +3073,14 @@ html {
   height: 8rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
 .w-auto {
   width: auto;
 }
@@ -3099,6 +3107,22 @@ html {
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .min-w-full {
@@ -3193,6 +3217,18 @@ html {
        column-gap: 3rem;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-clip {
+  overflow-x: clip;
+}
+
+.overflow-y-clip {
+  overflow-y: clip;
+}
+
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -3223,6 +3259,16 @@ html {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -3282,6 +3328,14 @@ html {
   padding-left: 1.75rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3323,6 +3377,11 @@ html {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -3393,6 +3452,11 @@ html {
 .text-cyan-500 {
   --tw-text-opacity: 1;
   color: rgb(6 182 212 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -3528,6 +3592,10 @@ html {
     display: block;
   }
 
+  .sm\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3597,6 +3665,10 @@ html {
 
   .md\:w-96 {
     width: 24rem;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:grid-cols-3 {

@@ -27,39 +27,28 @@ let Pre = [
     }
 ]
 
-let B4UK_1 = document.getElementById("B4UK_1")
-let B4UK_2 = document.getElementById("B4UK_2")
-let B4UK_3 = document.getElementById("B4UK_3")
-let B4UK_4 = document.getElementById("B4UK_4")
-let B4UK_5 = document.getElementById("B4UK_5")
-let B4UK_6 = document.getElementById("B4UK_6")
-let B4UK_Ttl = document.getElementById("B4UK_Ttl")
-let B4UK_Desc = document.getElementById("B4UK_Desc")
+let Title = document.getElementById("Title")
+let Desc = document.getElementById("Desc")
+let Prev = document.getElementById("Prev")
+let Next = document.getElementById("Next")
+let SLide = document.getElementById("Slide")
 
+let i = 0
 
-B4UK_1.onclick = function() {
-    B4UK_Ttl.innerText = Pre[0].Title
-    B4UK_Desc.innerText = Pre[0].Desc
-}
-B4UK_2.onclick = function() {
-    B4UK_Ttl.innerText = Pre[1].Title
-    B4UK_Desc.innerText = Pre[1].Desc
-}
-B4UK_3.onclick = function() {
-    B4UK_Ttl.innerText = Pre[2].Title
-    B4UK_Desc.innerText = Pre[2].Desc
-}
-B4UK_4.onclick = function() {
-    B4UK_Ttl.innerText = Pre[3].Title
-    B4UK_Desc.innerText = Pre[3].Desc
-}
-B4UK_5.onclick = function() {
-    B4UK_Ttl.innerText = Pre[4].Title
-    B4UK_Desc.innerText = Pre[4].Desc
-}
-B4UK_6.onclick = function() {
-    B4UK_Ttl.innerText = Pre[5].Title
-    B4UK_Desc.innerText = Pre[5].Desc
+Next.onclick = function() {
+    if (i < Pre.length - 1) {
+        i++
+        Title.innerHTML = Pre[i].Title
+        Desc.innerHTML = Pre[i].Desc
+        SLide.innerHTML = Pre[i].Title
+    }
 }
 
-
+Prev.onclick = function() {
+    if (i > 0) {
+        i--
+        Title.innerHTML = Pre[i].Title
+        Desc.innerHTML = Pre[i].Desc
+        SLide.innerHTML = Pre[i].Title
+    }
+}
