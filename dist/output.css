@@ -3348,6 +3348,10 @@ html {
   padding-left: 2.5rem;
 }
 
+.pt-\[50\%\] {
+  padding-top: 50%;
+}
+
 .text-left {
   text-align: left;
 }
