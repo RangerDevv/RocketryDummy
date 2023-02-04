@@ -11,12 +11,18 @@
 
 </head>
 <body class="snap-y snap-mandatory">
+    <div class="w-screen h-screen bg-black fixed z-50 block" id="LoadingSc">
+        <div class=" flex flex-col place-items-center">
+        <Lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_aurflyqv.json"  background="transparent"  speed="1"  style="width: 45%; height: 45%;"  loop autoplay></Lottie-player>
+        <h1 class="text-white text-2xl text-center" id="LoadingVal">Loading...</h1>
+        </div>
+    </div>
     <!-- Video Background -->
     <video id="Twinkling_Stars" class="absolute z-10 w-auto min-w-full min-h-none max-w-none" loop autoplay muted src="./Image/Stars.mp4">
         <!-- <source src="./image/Stars.mp4"> -->
     </video>
     <!-- Nav  -->
-    <nav class=" fixed w-screen z-50">
+    <nav class=" fixed w-screen z-40">
     <div class="navbar bg-base-300 text-white">
         <div class="navbar-start">
           <div class="dropdown">
@@ -160,6 +166,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="./src/scripts/BeforeYouKnow.js"></script>
+<script src="./src/scripts/loading.js"></script>
 <script>
   AOS.init();
 </script>
