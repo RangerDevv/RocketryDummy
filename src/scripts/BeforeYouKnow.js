@@ -43,6 +43,12 @@ let Anim = document.getElementById("Amin")
 
 let i = -1
 
+// preload all images
+let images = Pre.map(function() { return new Image() })
+images.forEach(function(img, i) {
+    img.src = Pre[i].Image
+})
+
 Next.onclick = function() {
     if (i < Pre.length - 1) {
         i++
@@ -64,3 +70,5 @@ Prev.onclick = function() {
         Anim.style.display = "none"
     }
 }
+
+
