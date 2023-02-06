@@ -270,7 +270,7 @@ function Updte() {
         // use CSS styling to hide all that is not needed
         Btn_1.style.display = "block"
         Btn_2.style.display = "block"
-        Btn_3.style.display = "block"
+        Btn_3.style.display = "none"
         Btn_4.style.display = "none"
         Btn_5.style.display = "none"
         Btn_6.style.display = "none"
