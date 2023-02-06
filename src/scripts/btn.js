@@ -228,6 +228,13 @@ function Updte() {
         Heading.innerText = "Select your destination"
         Desc.innerText = Curr_Plnt.Description
         Prev.style.display = "none"
+        // Use Css to set all the buttons to display block
+        Btn_1.style.display = "block"
+        Btn_2.style.display = "block"
+        Btn_3.style.display = "block"
+        Btn_4.style.display = "block"
+        Btn_5.style.display = "block"
+        Btn_6.style.display = "block"
     } if(Pg==2) {
         Btn_1.innerText = "Standard"
         Btn_2.innerText = "Economy"
@@ -239,6 +246,13 @@ function Updte() {
         Desc.innerText = Curr_Pln.Description
         Price.innerText = "0"
         Prev.style.display = "block"
+        // use CSS styling to hide all that is not needed
+        Btn_1.style.display = "block"
+        Btn_2.style.display = "block"
+        Btn_3.style.display = "block"
+        Btn_4.style.display = "none"
+        Btn_5.style.display = "none"
+        Btn_6.style.display = "none"
     } if(Pg==3) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
@@ -253,6 +267,13 @@ function Updte() {
         let abb = abbrNum(TotalAmt,2)
         Price.innerText = "$"+ abb
         Next.style.display = "block"
+        // use CSS styling to hide all that is not needed
+        Btn_1.style.display = "block"
+        Btn_2.style.display = "block"
+        Btn_3.style.display = "block"
+        Btn_4.style.display = "none"
+        Btn_5.style.display = "none"
+        Btn_6.style.display = "none"
     } if(Pg==4) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
@@ -266,6 +287,13 @@ function Updte() {
         let TotalAmt = Curr_Pln.price + Curr_Plnt.price
         let abb = abbrNum(TotalAmt,2)
         Price.innerText = abb
+        // use CSS styling to hide all that is not needed
+        Btn_1.style.display = "block"
+        Btn_2.style.display = "block"
+        Btn_3.style.display = "none"
+        Btn_4.style.display = "none"
+        Btn_5.style.display = "none"
+        Btn_6.style.display = "none"
     }
 }
 
