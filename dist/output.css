@@ -3077,20 +3077,16 @@ html {
   height: 9rem;
 }
 
-.h-32 {
-  height: 8rem;
+.h-auto {
+  height: auto;
 }
 
 .h-96 {
   height: 24rem;
 }
 
-.h-auto {
-  height: auto;
-}
-
-.h-20 {
-  height: 5rem;
+.h-32 {
+  height: 8rem;
 }
 
 .w-screen {
@@ -3121,6 +3117,10 @@ html {
   width: 90%;
 }
 
+.w-\[32rem\] {
+  width: 32rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -3131,6 +3131,10 @@ html {
 
 .w-72 {
   width: 18rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-full {
@@ -3229,14 +3233,6 @@ html {
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
-}
-
-.overflow-y-clip {
-  overflow-y: clip;
 }
 
 .overflow-y-visible {
@@ -3602,6 +3598,10 @@ html {
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
+  }
+
+  .sm\:w-\[32rem\] {
+    width: 32rem;
   }
 
   .sm\:grid-cols-3 {
