@@ -172,6 +172,7 @@ window.onload = function() {
         Btn_6.innerText = "Saturn" 
         Desc.innerText = "Click on the text to select your destination then click the continue button."
         Prev.style.display = "none"
+        Image.src = "./Image/KSC-20200828-PH-MWC01_0075_medium.jpg"
     } if(Pg==2) {
         Btn_1.innerText = "Standard"
         Btn_2.innerText = "Economy"
@@ -235,6 +236,7 @@ function Updte() {
         Btn_4.style.display = "block"
         Btn_5.style.display = "block"
         Btn_6.style.display = "block"
+        Image.src = "./Image/KSC-20200828-PH-MWC01_0075_medium.jpg"
     } if(Pg==2) {
         Btn_1.innerText = "Standard"
         Btn_2.innerText = "Economy"
@@ -253,6 +255,8 @@ function Updte() {
         Btn_4.style.display = "none"
         Btn_5.style.display = "none"
         Btn_6.style.display = "none"
+        // get a relavant image from unsplash
+        Image.src = "./Image/iss056e142871_alt_medium.jpg"
     } if(Pg==3) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
@@ -274,6 +278,7 @@ function Updte() {
         Btn_4.style.display = "none"
         Btn_5.style.display = "none"
         Btn_6.style.display = "none"
+        Image.src = "./Image/201411230015HQ_medium.jpg"
     } if(Pg==4) {
         Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
@@ -294,6 +299,7 @@ function Updte() {
         Btn_4.style.display = "none"
         Btn_5.style.display = "none"
         Btn_6.style.display = "none"
+        Image.src = "./Image/NHQ202212160009_medium.jpg"
     }
 }
 

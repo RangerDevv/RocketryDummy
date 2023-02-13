@@ -3117,8 +3117,8 @@ html {
   width: 90%;
 }
 
-.w-\[32rem\] {
-  width: 32rem;
+.w-full {
+  width: 100%;
 }
 
 .w-32 {
@@ -3131,10 +3131,6 @@ html {
 
 .w-72 {
   width: 18rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .min-w-full {
