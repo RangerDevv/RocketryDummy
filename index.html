@@ -11,7 +11,7 @@
 
 </head>
 <body class="snap-y snap-mandatory">
-    <div class="w-screen h-screen bg-black fixed z-50 block" id="LoadingSc">
+    <div class="w-screen h-screen bg-black fixed z-50 hidden" id="LoadingSc">
         <div class=" flex flex-col place-items-center pt-[50%] sm:pt-0">
         <Lottie-player src="https://assets10.lottiefiles.com/packages/lf20_rj4titti.json"  background="transparent"  speed="1.85"  style="width: 45%; height: 45%;"  loop autoplay></Lottie-player>
         <h1 class="text-white text-2xl text-center" id="LoadingVal">Loading...</h1>
@@ -147,7 +147,7 @@
     </div>        
     
     <div id="QuoteBlock" class="flex flex-row justify-center h-screen pt-96 sm:pt-32" data-aos="fade-up">
-                <p class="text-gray-200 text-center text-3xl w-[90%] font-extrabold pt-96 sm:pt-14 mt-14">Human space exploration helps to <span class="text-green-600">address fundamental questions </span>about our place in the Universe and the history of our solar system. Through addressing the challenges related to human space exploration we expand technology, create new industries, and help to <span class=" text-red-600">foster a peaceful connection</span> with other nations. <br> <br> -<a href="https://www.nasa.gov/exploration/whyweexplore/why_we_explore_main.html#:~:text=Human%20space%20exploration%20helps%20to,peaceful%20connection%20with%20other%20nations." class="text-blue-500 hover:underline">NASA.gov<span class="text-cyan-500 font-bold text-3xl">⇾</span></a></p>
+                <p class="text-gray-200 text-center text-3xl w-[90%] font-extrabold pt-72 sm:pt-14 mt-14">Human space exploration helps to <span class="text-green-600">address fundamental questions </span>about our place in the Universe and the history of our solar system. Through addressing the challenges related to human space exploration we expand technology, create new industries, and help to <span class=" text-red-600">foster a peaceful connection</span> with other nations. <br> <br> -<a href="https://www.nasa.gov/exploration/whyweexplore/why_we_explore_main.html#:~:text=Human%20space%20exploration%20helps%20to,peaceful%20connection%20with%20other%20nations." class="text-blue-500 hover:underline">NASA.gov<span class="text-cyan-500 font-bold text-3xl">⇾</span></a></p>
             </div>
             <!-- make a fake testimony -->
             <div class=" w-screen h-auto flex sm:flex-row flex-col gap-6 justify-center pt-96 sm:pt-0" id="Testimony">
@@ -167,10 +167,12 @@
             </div>
     <div class="flex justify-center flex-col mt-10 ">
     <div class=" text-white text-center text-5xl font-extrabold mt-14">What are you waiting for?</div>
-    <div class="flex justify-center pt-14"><a href="./pricing.html"><button class=" btn btn-success">Book your trip</button></a></div>
-
+    <div class="flex flex-row justify-center w-screen gap-12">
+    <div class="pt-14"><a href="./pricing.html"><button class=" btn btn-success">Book your trip</button></a></div>
+    <div class="pt-14"><a href="./knowBeforeYouGo.html"><button class=" btn btn-info">Know Before You Go ≫</button></a></div>
+    </div>
     <div class=" w-screen h-36"></div>
-
+    </div>
 </div>
     <footer>
         <p class="text-center text-sm text-white">#2043-901 © 2022 - 2023</p>
