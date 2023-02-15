@@ -63,21 +63,21 @@ let Plans = [
     // "","The premium plan would offer a truly luxurious space travel experience, with a larger and more advanced rocket, extended stays in orbit, and access to exclusive facilities and services. This plan might include private cabins, gourmet meals, and personalized training and support from experienced astronauts. The price for this plan could be upwards of $500,000.",
     {
         "Title": "Basic",
-        "Description": "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $100,000.",
+        "Description": "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $100,000. Maximum of 2 people per trip. Perfect for couples or friends.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
         "price":100000
     },
     {
         "Title": "Standard",
-        "Description": "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $105,000.",
+        "Description": "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $105,000. Maximum of 6 people per trip. Perfect for families or groups of friends.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
         "price":105000
     },
     {
         "Title": "Premium",
-        "Description": "This plan will have access to our top-of-the-line spacecraft, equipped with the latest technology and comfortable amenities. You will also have access to our exclusive training program, where you will learn how to navigate and operate your spacecraft, as well as participate in simulated space missions to prepare you for the real thing. Additionally, you will be able to bring along a guest of your choice on your journey, and you will both receive VIP treatment at all of our space stations and landing sites. The price for this plan might be around $805,000.",
+        "Description": "This plan will have access to our top-of-the-line spacecraft, equipped with the latest technology and comfortable amenities. You will also have access to our exclusive training program, where you will learn how to navigate and operate your spacecraft, as well as participate in simulated space missions to prepare you for the real thing. Additionally, you will be able to bring along a guest of your choice on your journey, and you will both receive VIP treatment at all of our space stations and landing sites. The price for this plan might be around $805,000. Maximum of 8 people per trip. Perfect for huge families or huge groups of friends.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
         "price": 805000
