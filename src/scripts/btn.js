@@ -23,7 +23,7 @@ let array = [
     },
     {
         "Title": "Earth",
-        "Description": "Earth is the third planet from the sun and the only known planet to support life. It is a terrestrial planet, meaning it has a solid surface, and is the largest of the terrestrial planets in the solar system. Earth has a diverse range of habitats, from lush forests and sandy deserts, to frozen tundra and vast oceans. It is also home to an incredible variety of plant and animal life, including humans. Space tourists will have the opportunity to experience the beauty and diversity of Earth, and to witness first-hand the amazing life forms that call this planet home. Book your trip to Earth today and experience the adventure of a lifetime!",
+        "Description": "Come experience the wonder and beauty of our home planet, Earth! As the only world with liquid water on its surface, Earth offers a unique environment that has allowed life to flourish for billions of years. With diverse habitats like deserts, forests, and tundras, there's always something new to discover. And don't forget about our trusty companion, the Moon! With its stable climate and fascinating geological features, the Moon adds even more excitement to your Earthly travels.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
         "price": 1000000
@@ -37,21 +37,21 @@ let array = [
     },
     {
         "Title": "Mars",
-        "Description": "Mars is an exciting destination for space tourists who want to experience the thrill of being on another planet. Its unique landscape, with its towering volcanoes and deep canyons, is unlike anything you'll see on Earth. The thin atmosphere of Mars makes for beautiful sunrises and sunsets, and you can even see the stars in greater detail than you would on Earth. Plus, with its milder temperatures and lower gravity, Mars is a great place to enjoy outdoor activities like hiking and exploring. Book your trip to Mars today and experience the adventure of a lifetime!",
+        "Description": "Ready for a truly out-of-this-world adventure? Look no further than Mars! This dry, rocky planet may be cold, but it's full of mysteries waiting to be uncovered. Named for the Roman god of war, Mars is a fierce and captivating planet that's just begging to be explored. With two unique and potato-shaped moons, Phobos and Deimos, and a history of robotic exploration, Mars is the ultimate destination for space enthusiasts looking for a challenge.",
         "src":"../Image/Planet4-removebg-preview.png",
         "color": "#a03f03",
         "price": 8230780
     },
     {
         "Title": "Jupiter",
-        "Description": "Jupiter is a must-see destination for space tourists who want to explore the outer reaches of the solar system. Its massive size and stunning beauty make it a truly awe-inspiring sight. From its colorful stripes to its iconic red spot, there is always something interesting to see on Jupiter. Plus, with its many moons, you'll have plenty of opportunities to go on exciting excursions and discover new and fascinating worlds. Book your trip to Jupiter today and experience the adventure of a lifetime!",
+        "Description": "Do you crave the thrill of the unknown? Look no further than Jupiter, the largest planet in our solar system! Surrounded by dozens of moons and several faint rings, Jupiter is a world full of surprises. While its extreme temperatures, pressures, and materials may make it unsuitable for life, they also make it an ideal destination for those seeking the ultimate adventure. With its massive size and vibrant atmosphere, Jupiter is truly a sight to behold.",
         "src":"./Image/Planet1-removebg-preview.png",
         "color": "#452e1a",
         "price":14030450
     },
     {
         "Title": "Saturn",
-        "Description": "Saturn is the sixth planet from the sun and the second-largest planet in the solar system. Known for its stunning rings, which are made up of countless small particles of ice and rock.  Saturn is also the home of several moons, including the largest moon in the solar system, called Titan. Space tourists will be amazed by the beauty and majesty of Saturn and its many moons, making it a must-see destination for anyone interested in exploring the solar system. Book your trip to Saturn today and experience the adventure of a lifetime!",
+        "Description": "Ready to take your space travel to the next level? Look no further than Saturn, the second-largest planet in our solar system! With its stunning ring system and dozens of moons, Saturn offers a unique and unforgettable travel experience. While its extreme temperatures, pressures, and materials may make it unsuitable for life, they also make it an ideal destination for those seeking the ultimate adventure. Whether you're looking to explore its vast system of moons or gaze in wonder at its magnificent rings, Saturn is the perfect destination for the ultimate space enthusiast.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
         "price":26780000
