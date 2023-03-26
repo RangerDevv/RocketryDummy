@@ -63,21 +63,21 @@ let Plans = [
     // "","The premium plan would offer a truly luxurious space travel experience, with a larger and more advanced rocket, extended stays in orbit, and access to exclusive facilities and services. This plan might include private cabins, gourmet meals, and personalized training and support from experienced astronauts. The price for this plan could be upwards of $500,000.",
     {
         "Title": "Basic",
-        "Description": "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $100,000. Maximum of 2 people per trip. Perfect for couples or friends.",
+        "Description": "This plan would include a trip on a small, reliable rocket with a few amenities such as food and water. The rocket would travel to low Earth orbit and provide passengers with a few minutes of weightlessness and stunning views of Earth. The price for this plan might be around $100,000. Maximum of 2 people per trip. Perfect for couples or friends. <br> <br> <h2 class='text-2xl'><strong>Rocket:</strong></h2> <br> The Starblazer: This sleek and reliable rocket is the perfect choice for couples or friends looking to experience the thrill of space travel on a budget. As part of RocketSpace’ basic plan, The Starblazer will take you on a journey to low Earth orbit, where you’ll enjoy a few minutes of weightlessness and stunning views of our home planet. With its advanced propulsion system and state-of-the-art navigation technology, The Starblazer provides a safe and comfortable ride at an affordable price. ",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
         "price":100000
     },
     {
         "Title": "Standard",
-        "Description": "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $105,000. Maximum of 6 people per trip. Perfect for families or groups of friends.",
+        "Description": "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $105,000. Maximum of 6 people per trip. Perfect for families or groups of friends. <br> <br> <h2 class='text-2xl'><strong>Rocket:</strong></h2> <br> The Comet Chaser: This agile and nimble rocket is built for chasing comets and other celestial objects in space. With its powerful engines and advanced maneuvering capabilities, the Comet Chaser can keep up with even the fastest-moving objects in space. Designed to accommodate 4-6 people, this rocket has a spacious interior and can carry up to 300kg of weight, making it perfect for small groups of friends or family on a mission to explore the cosmos and embark on a memorable journey.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
         "price":105000
     },
     {
         "Title": "Premium",
-        "Description": "This plan will have access to our top-of-the-line spacecraft, equipped with the latest technology and comfortable amenities. You will also have access to our exclusive training program, where you will learn how to navigate and operate your spacecraft, as well as participate in simulated space missions to prepare you for the real thing. Additionally, you will be able to bring along a guest of your choice on your journey, and you will both receive VIP treatment at all of our space stations and landing sites. The price for this plan might be around $805,000. Maximum of 8 people per trip. Perfect for huge families or huge groups of friends.",
+        "Description": "This plan will have access to our top-of-the-line spacecraft, equipped with the latest technology and comfortable amenities. You will also have access to our exclusive training program, where you will learn how to navigate and operate your spacecraft, as well as participate in simulated space missions to prepare you for the real thing. Additionally, you will be able to bring along a guest of your choice on your journey, and you will both receive VIP treatment at all of our space stations and landing sites. The price for this plan might be around $805,000. Maximum of 8 people per trip. Perfect for huge families or huge groups of friends. <br> <br> <h2 class='text-2xl'><strong>Rocket:</strong></h2> <br> The Planet Explorer: This state-of-the-art rocket is designed to provide the ultimate in luxury and comfort as you explore new planets in our solar system and beyond. The Planet Explorer is equipped with advanced life support systems and cutting-edge scientific instruments to ensure your safety and enjoyment. Relax in our spacious and well-appointed cabins, enjoy gourmet meals prepared by our onboard chefs, and take in stunning views of the cosmos from our observation deck. With The Planet Explorer, your journey through space will be an unforgettable experience.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
         "price": 805000
@@ -93,93 +93,93 @@ let Curr_Pln = Plans[0]
 function Btn1Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[0]
-        Desc.innerText = array[0].Description
-        Distance.innerText = "256,600 km"
+        Desc.innerHTML = array[0].Description
+        Distance.innerHTML = "256,600 km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
-        Price.innerText = "$"+formattedNumber
+        Price.innerHTML = "$"+formattedNumber
     }
     if (Pg == 2) {
         Curr_Pln = Plans[0]
-        Desc.innerText = Plans[0].Description
+        Desc.innerHTML = Plans[0].Description
         const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
-        Price.innerText = "$"+formattedNumber
+        Price.innerHTML = "$"+formattedNumber
     }
 }
 function Btn2Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[1]
-        Desc.innerText = array[1].Description
+        Desc.innerHTML = array[1].Description
         // Distance = 10000
-        Distance.innerText = "267,568 km"
+        Distance.innerHTML = "267,568 km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
-        Price.innerText = "$"+formattedNumber
+        Price.innerHTML = "$"+formattedNumber
 
     }
     if (Pg == 2) {
         Curr_Pln = Plans[1]
-        Desc.innerText = Plans[1].Description
+        Desc.innerHTML = Plans[1].Description
         const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
-        Price.innerText = "$"+formattedNumber
+        Price.innerHTML = "$"+formattedNumber
     }
 }function Btn3Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[2]
-        Desc.innerText = array[2].Description
-        Distance.innerText = "384,400 km"
+        Desc.innerHTML = array[2].Description
+        Distance.innerHTML = "384,400 km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
-        Price.innerText = "$"+formattedNumber    
+        Price.innerHTML = "$"+formattedNumber    
     }
     if (Pg == 2) {
         Curr_Pln = Plans[2]
-        // Desc.innerText = Plans[2]
-        Desc.innerText = Plans[2].Description
+        // Desc.innerHTML = Plans[2]
+        Desc.innerHTML = Plans[2].Description
         const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
-        Price.innerText = "$"+formattedNumber
+        Price.innerHTML = "$"+formattedNumber
     }
 }function Btn4Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[3]
-        Desc.innerText = array[3].Description
-        Distance.innerText = "97.821 million km"
+        Desc.innerHTML = array[3].Description
+        Distance.innerHTML = "97.821 million km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
-        Price.innerText = "$"+formattedNumber    
+        Price.innerHTML = "$"+formattedNumber    
     }
 }function Btn5Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[4]
-        Desc.innerText = array[4].Description
-        Distance.innerText = "778 million km"
+        Desc.innerHTML = array[4].Description
+        Distance.innerHTML = "778 million km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
-        Price.innerText = "$"+formattedNumber    
+        Price.innerHTML = "$"+formattedNumber    
     }
 }function Btn6Clk() {
     if (Pg == 1) {
         Curr_Plnt = array[5]
-        Desc.innerText = array[5].Description
-        Distance.innerText = "1.5839 billion km"
+        Desc.innerHTML = array[5].Description
+        Distance.innerHTML = "1.5839 billion km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
-        Price.innerText = "$"+formattedNumber    
+        Price.innerHTML = "$"+formattedNumber    
     }
 }
 
 window.onload = function() {
     if (Pg==1) {
-        Btn_1.innerText = "SightSeeing"
-        Btn_2.innerText = "Earth"
-        Btn_3.innerText = "Moon"
-        Btn_4.innerText = "Mars"
-        Btn_5.innerText = "Jupiter"
-        Btn_6.innerText = "Saturn" 
-        Desc.innerText = "Click on the text to select your destination then click the continue button."
+        Btn_1.innerHTML = "SightSeeing"
+        Btn_2.innerHTML = "Earth"
+        Btn_3.innerHTML = "Moon"
+        Btn_4.innerHTML = "Mars"
+        Btn_5.innerHTML = "Jupiter"
+        Btn_6.innerHTML = "Saturn" 
+        Desc.innerHTML = "Click on the text to select your destination then click the continue button."
         Prev.style.display = "none"
         Image.src = "./Image/KSC-20200828-PH-MWC01_0075_medium.jpg"
     } if(Pg==2) {
-        Btn_1.innerText = "Standard"
-        Btn_2.innerText = "Economy"
-        Btn_3.innerText = "Premium"
-        Btn_4.innerText = " "
-        Btn_5.innerText = " "
-        Btn_6.innerText = " "
+        Btn_1.innerHTML = "Standard"
+        Btn_2.innerHTML = "Economy"
+        Btn_3.innerHTML = "Premium"
+        Btn_4.innerHTML = " "
+        Btn_5.innerHTML = " "
+        Btn_6.innerHTML = " "
     }
 }
 
@@ -220,14 +220,14 @@ const abbrNum = (number, decPlaces) => {
 
 function Updte() {
     if (Pg==1) {
-        Btn_1.innerText = "SightSeeing"
-        Btn_2.innerText = "Earth"
-        Btn_3.innerText = "Moon"
-        Btn_4.innerText = "Mars"
-        Btn_5.innerText = "Jupiter"
-        Btn_6.innerText = "Saturn" 
-        Heading.innerText = "Select your destination"
-        Desc.innerText = Curr_Plnt.Description
+        Btn_1.innerHTML = "SightSeeing"
+        Btn_2.innerHTML = "Earth"
+        Btn_3.innerHTML = "Moon"
+        Btn_4.innerHTML = "Mars"
+        Btn_5.innerHTML = "Jupiter"
+        Btn_6.innerHTML = "Saturn" 
+        Heading.innerHTML = "Select your destination"
+        Desc.innerHTML = Curr_Plnt.Description
         Prev.style.display = "none"
         // Use Css to set all the buttons to display block
         Btn_1.style.display = "block"
@@ -238,15 +238,15 @@ function Updte() {
         Btn_6.style.display = "block"
         Image.src = "./Image/KSC-20200828-PH-MWC01_0075_medium.jpg"
     } if(Pg==2) {
-        Btn_1.innerText = "Standard"
-        Btn_2.innerText = "Economy"
-        Btn_3.innerText = "Premium"
-        Btn_4.innerText = " "
-        Btn_5.innerText = " "
-        Btn_6.innerText = " "
-        Heading.innerText = "Select your pricing plan"
-        Desc.innerText = Curr_Pln.Description
-        Price.innerText = "0"
+        Btn_1.innerHTML = "Standard"
+        Btn_2.innerHTML = "Economy"
+        Btn_3.innerHTML = "Premium"
+        Btn_4.innerHTML = " "
+        Btn_5.innerHTML = " "
+        Btn_6.innerHTML = " "
+        Heading.innerHTML = "Select your pricing plan"
+        Desc.innerHTML = Curr_Pln.Description
+        Price.innerHTML = "0"
         Prev.style.display = "block"
         // use CSS styling to hide all that is not needed
         Btn_1.style.display = "block"
@@ -258,18 +258,18 @@ function Updte() {
         // get a relavant image from unsplash
         Image.src = "./Image/iss056e142871_alt_medium.jpg"
     } if(Pg==3) {
-        Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
-        Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
-        Btn_3.innerText = " "
-        Btn_4.innerText = " "
-        Btn_5.innerText = " "
-        Btn_6.innerText = " "
+        Btn_1.innerHTML = "Plant: " + Curr_Plnt.Title 
+        Btn_2.innerHTML = "Pricing Plan: " + Curr_Pln.Title
+        Btn_3.innerHTML = " "
+        Btn_4.innerHTML = " "
+        Btn_5.innerHTML = " "
+        Btn_6.innerHTML = " "
         let TotalAmt = Curr_Pln.price + Curr_Plnt.price
         const Ttlprc2 = TotalAmt.toLocaleString("en-US");
-        Desc.innerText = Desc.innerText = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is $" + (Ttlprc2) + ". Do you want to continue?" 
-        Heading.innerText = "Check your information"
+        Desc.innerHTML = Desc.innerHTML = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is $" + (Ttlprc2) + ". Do you want to continue?" 
+        Heading.innerHTML = "Check your information"
         let abb = abbrNum(TotalAmt,2)
-        Price.innerText = "$"+ abb
+        Price.innerHTML = "$"+ abb
         Next.style.display = "block"
         // use CSS styling to hide all that is not needed
         Btn_1.style.display = "block"
@@ -280,18 +280,18 @@ function Updte() {
         Btn_6.style.display = "none"
         Image.src = "./Image/201411230015HQ_medium.jpg"
     } if(Pg==4) {
-        Btn_1.innerText = "Plant: " + Curr_Plnt.Title 
-        Btn_2.innerText = "Pricing Plan: " + Curr_Pln.Title
-        Btn_3.innerText = " "
-        Btn_4.innerText = " "
-        Btn_5.innerText = " "
-        Btn_6.innerText = " "
-        Desc.innerText = Desc.innerText = "Booked! Thank you for choosing RocketSpace! 🚀" 
-        Heading.innerText = "Success! ✌️"
+        Btn_1.innerHTML = "Plant: " + Curr_Plnt.Title 
+        Btn_2.innerHTML = "Pricing Plan: " + Curr_Pln.Title
+        Btn_3.innerHTML = " "
+        Btn_4.innerHTML = " "
+        Btn_5.innerHTML = " "
+        Btn_6.innerHTML = " "
+        Desc.innerHTML = Desc.innerHTML = "Booked! Thank you for choosing RocketSpace! 🚀" 
+        Heading.innerHTML = "Success! ✌️"
         Next.style.display = "none"
         let TotalAmt = Curr_Pln.price + Curr_Plnt.price
         let abb = abbrNum(TotalAmt,2)
-        Price.innerText = abb
+        Price.innerHTML = abb
         // use CSS styling to hide all that is not needed
         Btn_1.style.display = "block"
         Btn_2.style.display = "block"
@@ -304,7 +304,7 @@ function Updte() {
 }
 
 Next.onclick = function() {
-    Price.innerText = Curr_Plnt.price
+    Price.innerHTML = Curr_Plnt.price
     Pg += 1
     Updte()
 }
@@ -313,7 +313,7 @@ Prev.onclick = function() {
     if( Pg< 1){
         Pg = 1
     }
-    Price.innerText = Curr_Plnt.price
+    Price.innerHTML = Curr_Plnt.price
     Pg -= 1
     Updte()
 }
