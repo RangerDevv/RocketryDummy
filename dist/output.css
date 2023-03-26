@@ -2902,6 +2902,14 @@ html {
   padding-right: 1rem;
 }
 
+.table tr.hover:hover th,
+    .table tr.hover:hover td,
+    .table tr.hover:nth-child(even):hover th,
+    .table tr.hover:nth-child(even):hover td {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
+}
+
 @keyframes toast-pop {
   0% {
     transform: scale(0.9);
@@ -3161,12 +3169,12 @@ html {
   height: 1.25rem;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
 .h-auto {
   height: auto;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .h-36 {
@@ -3179,6 +3187,14 @@ html {
 
 .h-32 {
   height: 8rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .w-screen {
@@ -3245,6 +3261,10 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .snap-y {
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
 }
@@ -3285,6 +3305,10 @@ html {
   justify-content: center;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-11 {
   gap: 2.75rem;
 }
@@ -3303,6 +3327,18 @@ html {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .gap-x-4 {
@@ -3333,6 +3369,10 @@ html {
   place-self: center;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .overflow-y-visible {
   overflow-y: visible;
 }
@@ -3351,6 +3391,14 @@ html {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-br-none {
@@ -3428,12 +3476,16 @@ html {
   padding-top: 2.5rem;
 }
 
-.pt-96 {
-  padding-top: 24rem;
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-72 {
   padding-top: 18rem;
+}
+
+.pt-96 {
+  padding-top: 24rem;
 }
 
 .pb-4 {
@@ -3462,10 +3514,6 @@ html {
 
 .pl-10 {
   padding-left: 2.5rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .text-left {
@@ -3612,8 +3660,40 @@ html {
   transition-delay: 300ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-linear {
   transition-timing-function: linear;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:scale-100:hover {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-150:hover {
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-125:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:underline:hover {
@@ -3735,6 +3815,14 @@ html {
     flex-direction: row;
   }
 
+  .sm\:items-stretch {
+    align-items: stretch;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:overflow-visible {
     overflow: visible;
   }
@@ -3743,20 +3831,16 @@ html {
     padding-top: 0px;
   }
 
-  .sm\:pt-32 {
-    padding-top: 8rem;
-  }
-
   .sm\:pt-14 {
     padding-top: 3.5rem;
   }
 
-  .sm\:pl-14 {
-    padding-left: 3.5rem;
-  }
-
   .sm\:pt-16 {
     padding-top: 4rem;
+  }
+
+  .sm\:pl-14 {
+    padding-left: 3.5rem;
   }
 
   .sm\:text-left {

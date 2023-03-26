@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockets</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+</head>
+<body>
+    <video id="Twinkling_Stars" class="absolute z-10 w-auto min-w-full min-h-none max-w-none" loop autoplay muted src="./Image/Stars.mp4"></video>
+    <nav class=" fixed w-screen z-40">
+        <div class="navbar bg-base-300 text-white">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-300 text-white rounded-box w-52">
+                  <li><a href="./knowBeforeYouGo.html">Know Before You Go</a></li>
+                  <li><a href="./rockets.html">Rockets</a></li>
+                  <li><a href="./credits.html">Documentation</a></li>
+                  <li><a href="./about.html">About</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl" href="./index.html">RocketSpace</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="./knowBeforeYouGo.html">Know Before You Go</a></li>
+                <li><a href="./rockets.html">Rockets</a></li>
+                <li><a href="./credits.html">Documentation</a></li>
+                <li><a href="./about.html">About</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-success" href="./pricing.html">Pricing</a>
+            </div>
+        </div>
+    </nav>
+    <p class="text-center text-5xl font-bold text-white pt-20">Rockets</p>
+    <div class="flex flex-col gap-20 pt-16 items-center sm:items-stretch">
+        <div class="flex flex-col md:flex-row gap-4 justify-around" id="r1">
+            <img class="w-96 h-96 rounded-md transform hover:scale-125 transition duration-500 ease-in-out" src="./Image/Rockets/Rocket_3.jpg" alt="rocket1">
+            <div class="flex flex-col gap-2">
+                <p class="w-96 text-2xl font-bold text-white">The Starblazer</p>
+                <p class="w-96 text-md text-white">This sleek and reliable rocket is the perfect choice for couples or friends looking to experience the thrill of space travel on a budget. As part of RocketSpace’ basic plan, The Starblazer will take you on a journey to low Earth orbit, where you’ll enjoy a few minutes of weightlessness and stunning views of our home planet. With its advanced propulsion system and state-of-the-art navigation technology, The Starblazer provides a safe and comfortable ride at an affordable price.</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4 justify-around" id="r2">
+            <img class="w-96 h-96 rounded-md transform hover:scale-125 transition duration-500 ease-in-out" src="./Image/Rockets/Rocket_2.jpg" alt="rocket1">
+            <div class="flex flex-col gap-2">
+                <p class="w-96 text-2xl font-bold text-white">The Comet Chaser</p>
+                <p class="w-96 text-md text-white">This agile and nimble rocket is built for chasing comets and other celestial objects in space. With its powerful engines and advanced maneuvering capabilities, the Comet Chaser can keep up with even the fastest-moving objects in space. Designed to accommodate 4-6 people, this rocket has a spacious interior and can carry up to 300kg of weight, making it perfect for small groups of friends or family on a mission to explore the cosmos and embark on a memorable journey.</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4 justify-around" id="r3">
+            <img class="w-96 h-96 rounded-md transform hover:scale-125 transition duration-500 ease-in-out" src="./Image/Rockets/Rocket_1.jpg" alt="rocket1">
+            <div class="flex flex-col gap-2">
+                <p class="w-96 text-2xl font-bold text-white">Orbital Explorer</p>
+                <p class="w-96 text-md text-white">This state-of-the-art rocket is designed to provide the ultimate in luxury and comfort as you explore new planets in our solar system and beyond. Orbital Explorer is equipped with advanced life support systems and cutting-edge scientific instruments to ensure your safety and enjoyment. Relax in our spacious and well-appointed cabins, enjoy gourmet meals prepared by our onboard chefs, and take in stunning views of the cosmos from our observation deck. With Orbital Explorer, your journey through space will be an unforgettable experience.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w-screen h-24"></div>
+</body>
+</html>
