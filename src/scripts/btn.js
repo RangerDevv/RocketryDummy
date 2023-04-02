@@ -87,7 +87,6 @@ let Plans = [
 let Pg = 1
 let Curr_Plnt = array[0]
 let Curr_Pln = Plans[0]
-// let TotalPrice = Curr_Pln.price + Curr_Plnt.price
 
 
 function Btn1Clk() {
@@ -193,33 +192,18 @@ window.onload = function() {
 }
 
 const abbrNum = (number, decPlaces) => {
-    // 2 decimal places => 100, 3 => 1000, etc
     decPlaces = Math.pow(10, decPlaces)
-  
-    // Enumerate number abbreviations
     var abbrev = ['k', 'm', 'b', 't']
-  
-    // Go through the array backwards, so we do the largest first
     for (var i = abbrev.length - 1; i >= 0; i--) {
-      // Convert array index to "1000", "1000000", etc
       var size = Math.pow(10, (i + 1) * 3)
   
-      // If the number is bigger or equal do the abbreviation
       if (size <= number) {
-        // Here, we multiply by decPlaces, round, and then divide by decPlaces.
-        // This gives us nice rounding to a particular decimal place.
         number = Math.round((number * decPlaces) / size) / decPlaces
-  
-        // Handle special case where we round up to the next abbreviation
         if (number == 1000 && i < abbrev.length - 1) {
           number = 1
           i++
         }
-  
-        // Add the letter for the abbreviation
         number += abbrev[i]
-  
-        // We are done... stop
         break
       }
     }
@@ -249,12 +233,6 @@ function Updte() {
         // get a relavant image from unsplash
         Image.src = "./Image/iss056e142871_alt_medium.jpg"
     } if(Pg==2) {
-        // Btn_1.innerHTML = "SightSeeing"
-        // Btn_2.innerHTML = "Earth"
-        // Btn_3.innerHTML = "Moon"
-        // Btn_4.innerHTML = "Mars"
-        // Btn_5.innerHTML = "Jupiter"
-        // Btn_6.innerHTML = "Saturn" 
         if (Curr_Pln == Plans[0]) {
             Btn_1.innerHTML = "SightSeeing"
             Btn_2.innerHTML = "Earth"
@@ -294,13 +272,6 @@ function Updte() {
         Heading.innerHTML = "Select your destination"
         Desc.innerHTML = Curr_Plnt.Description
         Prev.style.display = "block"
-        // Use Css to set all the buttons to display block
-        // Btn_1.style.display = "block"
-        // Btn_2.style.display = "block"
-        // Btn_3.style.display = "block"
-        // Btn_4.style.display = "block"
-        // Btn_5.style.display = "block"
-        // Btn_6.style.display = "block"
         Image.src = "./Image/KSC-20200828-PH-MWC01_0075_medium.jpg"
     } if(Pg==3) {
         Btn_1.innerHTML = "Plant: " + Curr_Plnt.Title 
