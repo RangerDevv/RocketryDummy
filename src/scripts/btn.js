@@ -92,60 +92,66 @@ let Curr_Pln = Plans[0]
 
 function Btn1Clk() {
     if (Pg == 1) {
+        Curr_Pln = Plans[0]
+        Desc.innerHTML = Plans[0].Description
+        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
+        Price.innerHTML = "$"+formattedNumber
+    }
+    if (Pg == 2) {
         Curr_Plnt = array[0]
         Desc.innerHTML = array[0].Description
         Distance.innerHTML = "256,600 km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
         Price.innerHTML = "$"+formattedNumber
     }
-    if (Pg == 2) {
-        Curr_Pln = Plans[0]
-        Desc.innerHTML = Plans[0].Description
-        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
-        Price.innerHTML = "$"+formattedNumber
-    }
 }
 function Btn2Clk() {
     if (Pg == 1) {
-        Curr_Plnt = array[1]
-        Desc.innerHTML = array[1].Description
+        Curr_Pln = Plans[1]
+        Desc.innerHTML = Plans[1].Description
         // Distance = 10000
-        Distance.innerHTML = "267,568 km"
-        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
+        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
         Price.innerHTML = "$"+formattedNumber
 
     }
     if (Pg == 2) {
-        Curr_Pln = Plans[1]
-        Desc.innerHTML = Plans[1].Description
-        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
+        Curr_Plnt = array[1]
+        Desc.innerHTML = array[1].Description
+        Distance.innerHTML = "267,568 km"
+        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
         Price.innerHTML = "$"+formattedNumber
     }
 }function Btn3Clk() {
     if (Pg == 1) {
+        Curr_Pln = Plans[2]
+        Desc.innerHTML = Plans[2].Description
+        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
+        Price.innerHTML = "$"+formattedNumber    
+    }
+    if (Pg == 2) {
         Curr_Plnt = array[2]
         Desc.innerHTML = array[2].Description
         Distance.innerHTML = "384,400 km"
         const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
-        Price.innerHTML = "$"+formattedNumber    
-    }
-    if (Pg == 2) {
-        Curr_Pln = Plans[2]
-        // Desc.innerHTML = Plans[2]
-        Desc.innerHTML = Plans[2].Description
-        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
         Price.innerHTML = "$"+formattedNumber
     }
 }function Btn4Clk() {
     if (Pg == 1) {
-        Curr_Plnt = array[3]
-        Desc.innerHTML = array[3].Description
+        Curr_Pln = Plans[3]
+        Desc.innerHTML = Plans[3].Description
         Distance.innerHTML = "97.821 million km"
-        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
+        const formattedNumber = Curr_Pln.price.toLocaleString("en-US");
         Price.innerHTML = "$"+formattedNumber    
     }
+    if (Pg == 2) {
+        Curr_Plnt = array[3]
+        Desc.innerHTML = array[3].Description
+        Distance.innerHTML = "1.496 billion km"
+        const formattedNumber = Curr_Plnt.price.toLocaleString("en-US");
+        Price.innerHTML = "$"+formattedNumber
+    }
 }function Btn5Clk() {
-    if (Pg == 1) {
+    if (Pg == 2) {
         Curr_Plnt = array[4]
         Desc.innerHTML = array[4].Description
         Distance.innerHTML = "778 million km"
@@ -153,7 +159,7 @@ function Btn2Clk() {
         Price.innerHTML = "$"+formattedNumber    
     }
 }function Btn6Clk() {
-    if (Pg == 1) {
+    if (Pg == 2) {
         Curr_Plnt = array[5]
         Desc.innerHTML = array[5].Description
         Distance.innerHTML = "1.5839 billion km"
@@ -164,22 +170,25 @@ function Btn2Clk() {
 
 window.onload = function() {
     if (Pg==1) {
-        Btn_1.innerHTML = "SightSeeing"
-        Btn_2.innerHTML = "Earth"
-        Btn_3.innerHTML = "Moon"
-        Btn_4.innerHTML = "Mars"
-        Btn_5.innerHTML = "Jupiter"
-        Btn_6.innerHTML = "Saturn" 
-        Desc.innerHTML = "Click on the text to select your destination then click the continue button."
-        Prev.style.display = "none"
-        Image.src = "./Image/KSC-20200828-PH-MWC01_0075_medium.jpg"
-    } if(Pg==2) {
         Btn_1.innerHTML = "Standard"
         Btn_2.innerHTML = "Economy"
         Btn_3.innerHTML = "Premium"
         Btn_4.innerHTML = " "
         Btn_5.innerHTML = " "
         Btn_6.innerHTML = " "
+        Heading.innerHTML = "Select your pricing plan"
+        Desc.innerHTML = Curr_Pln.Description
+        Price.innerHTML = "0"
+        Prev.style.display = "none"
+        // use CSS styling to hide all that is not needed
+        Btn_1.style.display = "block"
+        Btn_2.style.display = "block"
+        Btn_3.style.display = "block"
+        Btn_4.style.display = "none"
+        Btn_5.style.display = "none"
+        Btn_6.style.display = "none"
+        // get a relavant image from unsplash
+        Image.src = "./Image/iss056e142871_alt_medium.jpg"
     }
 }
 
@@ -220,24 +229,6 @@ const abbrNum = (number, decPlaces) => {
 
 function Updte() {
     if (Pg==1) {
-        Btn_1.innerHTML = "SightSeeing"
-        Btn_2.innerHTML = "Earth"
-        Btn_3.innerHTML = "Moon"
-        Btn_4.innerHTML = "Mars"
-        Btn_5.innerHTML = "Jupiter"
-        Btn_6.innerHTML = "Saturn" 
-        Heading.innerHTML = "Select your destination"
-        Desc.innerHTML = Curr_Plnt.Description
-        Prev.style.display = "none"
-        // Use Css to set all the buttons to display block
-        Btn_1.style.display = "block"
-        Btn_2.style.display = "block"
-        Btn_3.style.display = "block"
-        Btn_4.style.display = "block"
-        Btn_5.style.display = "block"
-        Btn_6.style.display = "block"
-        Image.src = "./Image/KSC-20200828-PH-MWC01_0075_medium.jpg"
-    } if(Pg==2) {
         Btn_1.innerHTML = "Standard"
         Btn_2.innerHTML = "Economy"
         Btn_3.innerHTML = "Premium"
@@ -247,7 +238,7 @@ function Updte() {
         Heading.innerHTML = "Select your pricing plan"
         Desc.innerHTML = Curr_Pln.Description
         Price.innerHTML = "0"
-        Prev.style.display = "block"
+        Prev.style.display = "none"
         // use CSS styling to hide all that is not needed
         Btn_1.style.display = "block"
         Btn_2.style.display = "block"
@@ -257,6 +248,60 @@ function Updte() {
         Btn_6.style.display = "none"
         // get a relavant image from unsplash
         Image.src = "./Image/iss056e142871_alt_medium.jpg"
+    } if(Pg==2) {
+        // Btn_1.innerHTML = "SightSeeing"
+        // Btn_2.innerHTML = "Earth"
+        // Btn_3.innerHTML = "Moon"
+        // Btn_4.innerHTML = "Mars"
+        // Btn_5.innerHTML = "Jupiter"
+        // Btn_6.innerHTML = "Saturn" 
+        if (Curr_Pln == Plans[0]) {
+            Btn_1.innerHTML = "SightSeeing"
+            Btn_2.innerHTML = "Earth"
+            Btn_1.style.display = "block"
+            Btn_2.style.display = "block"
+            Btn_3.style.display = "none"
+            Btn_4.style.display = "none"
+            Btn_5.style.display = "none"
+            Btn_6.style.display = "none"
+        }
+        if (Curr_Pln == Plans[1]) {
+            Btn_1.innerHTML = "SightSeeing"
+            Btn_2.innerHTML = "Earth"
+            Btn_3.innerHTML = "Moon"
+            Btn_4.innerHTML = "Mars"
+            Btn_1.style.display = "block"
+            Btn_2.style.display = "block"
+            Btn_3.style.display = "block"
+            Btn_4.style.display = "block"
+            Btn_5.style.display = "none"
+            Btn_6.style.display = "none"
+        }
+        if (Curr_Pln == Plans[2]) {
+            Btn_1.innerHTML = "SightSeeing"
+            Btn_2.innerHTML = "Earth"
+            Btn_3.innerHTML = "Moon"
+            Btn_4.innerHTML = "Mars"
+            Btn_5.innerHTML = "Jupiter"
+            Btn_6.innerHTML = "Saturn"
+            Btn_1.style.display = "block"
+            Btn_2.style.display = "block"
+            Btn_3.style.display = "block"
+            Btn_4.style.display = "block"
+            Btn_5.style.display = "block"
+            Btn_6.style.display = "block"
+        }
+        Heading.innerHTML = "Select your destination"
+        Desc.innerHTML = Curr_Plnt.Description
+        Prev.style.display = "block"
+        // Use Css to set all the buttons to display block
+        // Btn_1.style.display = "block"
+        // Btn_2.style.display = "block"
+        // Btn_3.style.display = "block"
+        // Btn_4.style.display = "block"
+        // Btn_5.style.display = "block"
+        // Btn_6.style.display = "block"
+        Image.src = "./Image/KSC-20200828-PH-MWC01_0075_medium.jpg"
     } if(Pg==3) {
         Btn_1.innerHTML = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerHTML = "Pricing Plan: " + Curr_Pln.Title
@@ -304,7 +349,7 @@ function Updte() {
 }
 
 Next.onclick = function() {
-    Price.innerHTML = Curr_Plnt.price
+    Price.innerHTML = Curr_Pln.price
     Pg += 1
     Updte()
 }
@@ -313,7 +358,7 @@ Prev.onclick = function() {
     if( Pg< 1){
         Pg = 1
     }
-    Price.innerHTML = Curr_Plnt.price
+    Price.innerHTML = Curr_Pln.price
     Pg -= 1
     Updte()
 }
