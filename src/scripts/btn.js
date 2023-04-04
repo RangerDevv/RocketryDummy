@@ -282,8 +282,8 @@ function Updte() {
         Btn_6.innerHTML = " "
         let TotalAmt = Curr_Pln.price + Curr_Plnt.price
         const Ttlprc2 = TotalAmt.toLocaleString("en-US");
-        Desc.innerHTML = Desc.innerHTML = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is $" + (Ttlprc2) + ". Do you want to continue?" 
-        Heading.innerHTML = "Check your information"
+        Desc.innerHTML = "You have selected, " + Curr_Plnt.Title + " as your destination in space. You also selected " + Curr_Pln.Title + " plan as your pricing plan. Your total price is $" + (Ttlprc2) + ". Do you want to continue?" 
+        Heading.innerHTML = "Check Your Information"
         let abb = abbrNum(TotalAmt,2)
         Price.innerHTML = "$"+ abb
         Next.style.display = "block"
@@ -305,6 +305,7 @@ function Updte() {
         Desc.innerHTML = Desc.innerHTML = "Booked! Thank you for choosing RocketSpace! 🚀" 
         Heading.innerHTML = "Success! ✌️"
         Next.style.display = "none"
+        Prev.innerText = "Cancel"
         let TotalAmt = Curr_Pln.price + Curr_Plnt.price
         let abb = abbrNum(TotalAmt,2)
         Price.innerHTML = abb
