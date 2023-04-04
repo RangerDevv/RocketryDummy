@@ -235,7 +235,7 @@ function Updte() {
     } if(Pg==2) {
         if (Curr_Pln == Plans[0]) {
             Btn_1.innerHTML = "SightSeeing"
-            Btn_2.innerHTML = "Earth"
+            Btn_2.innerHTML = "ISS"
             Btn_1.style.display = "block"
             Btn_2.style.display = "block"
             Btn_3.style.display = "none"
@@ -245,7 +245,7 @@ function Updte() {
         }
         if (Curr_Pln == Plans[1]) {
             Btn_1.innerHTML = "SightSeeing"
-            Btn_2.innerHTML = "Earth"
+            Btn_2.innerHTML = "ISS"
             Btn_3.innerHTML = "Moon"
             Btn_4.innerHTML = "Mars"
             Btn_1.style.display = "block"
@@ -257,7 +257,7 @@ function Updte() {
         }
         if (Curr_Pln == Plans[2]) {
             Btn_1.innerHTML = "SightSeeing"
-            Btn_2.innerHTML = "Earth"
+            Btn_2.innerHTML = "ISS"
             Btn_3.innerHTML = "Moon"
             Btn_4.innerHTML = "Mars"
             Btn_5.innerHTML = "Jupiter"
