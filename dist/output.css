@@ -3559,6 +3559,11 @@ html {
   grid-row: 1 / -1;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -3825,6 +3830,10 @@ html {
 
 .place-self-center {
   place-self: center;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-y-visible {
