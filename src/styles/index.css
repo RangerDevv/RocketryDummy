@@ -2,6 +2,13 @@ html {
     scroll-behavior: smooth;
   }
 
+  /*  make everything bigger for ultrawide */
+  @media (min-width: 2560px) {
+    html {
+      font-size: 1.5rem;
+    }
+  }
+
 #Planet_Img {
   width: 75%;
   /* height: 100%; */
@@ -49,5 +56,17 @@ html {
     #Images {
       width: 25%;
       height: 100%;
+    }
+  }
+
+  #lotti {
+    width: 85%;
+  }
+
+  /* on ultrawide make it smaller */
+  @media (min-width: 2560px) {
+    #lotti {
+      width: 60%;
+      height: 60%;
     }
   }
