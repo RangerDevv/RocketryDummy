@@ -11,7 +11,7 @@
 
 </head>
 <body class="snap-y snap-mandatory">
-    <div class="w-screen h-screen bg-black fixed z-50 block" id="LoadingSc">
+    <div class="w-screen h-screen bg-black fixed z-50 hidden" id="LoadingSc">
         <div class=" flex flex-col place-items-center pt-[50%] sm:pt-0">
         <Lottie-player src="https://assets10.lottiefiles.com/packages/lf20_rj4titti.json"  background="transparent"  speed="1.85"  style="width: 45%; height: 45%;"  loop autoplay></Lottie-player>
         <h1 class="text-white text-2xl text-center" id="LoadingVal">Loading...</h1>
@@ -55,8 +55,8 @@
     <header class="text-white pt-32 md:p-24 flex flex-row justify-center md:justify-start h-auto snap-start">
         <div class="flex flex-col gap-11">
         <div class=" flex flex-col gap-11">
-        <h1 class="text-3xl text-center md:text-left font-bold w-96 md:w-[30rem]" id="Header"></h1>
-        <h1 class="text-lg text-center md:text-left font-semibold w-96">From low Earth orbit to the Moon and beyond, RocketSpace provides state-of-the-art spacecraft and <span class=" text-yellow-400">highly trained pilots</span> to ensure a <span class=" text-blue-400">safe and exciting </span>space travel experience for all. <br> Made by <span class="text-purple-500">#2043-901</span></h1>
+        <h1 class="text-5xl text-center md:text-left font-bold w-96 h-16 md:h-24 md:w-[30rem] 2xl:text-5xl 2xl:w-[60rem]" id="Header"></h1>
+        <h1 class="text-2xl text-center md:text-left font-semibold w-[35rem] 2xl:text-3xl 2xl:w-[40rem]">From low Earth orbit to the Moon and beyond, RocketSpace provides state-of-the-art spacecraft and <span class=" text-yellow-400">highly trained pilots</span> to ensure a <span class=" text-blue-400">safe and exciting </span>space travel experience for all. <br> Made by <span class="text-purple-500">#2043-901</span></h1>
         </div>
         <div class=" flex gap-x-4 justify-center md:justify-start">
             <a href="#About"><button class="btn bg-red-500 hover:btn-error text-black font-semibold">About ▼</button></a>
@@ -64,7 +64,7 @@
         </div>
         </div>
         <div class=" w-0 md:w-screen flex justify-end">
-            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_qogkaqmb.json"  background="transparent"  speed="0.5"  style="width: 75%; height: 75%;"  loop autoplay></lottie-player>
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_qogkaqmb.json"  background="transparent"  speed="0.5" id="lotti" loop autoplay></lottie-player>
         </div>
     </header>
     <div class="text-white pt-24 md:p-24 flex flex-col md:flex-row justify-center md:justify-start w-screen h-auto snap-start" id="About" data-aos="fade-down-right">

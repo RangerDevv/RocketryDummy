@@ -1,7 +1,5 @@
 html {
     scroll-behavior: smooth;
-    max-width: 1920px;
-    margin: 0 auto;
   }
 #Planet_Img {
   width: 75%;
@@ -50,5 +48,19 @@ html {
     #Images {
       width: 25%;
       height: 100%;
+    }
+  }
+
+
+  #lotti {
+    width: 85%;
+    height: 85%;
+  }
+
+  /*  on ultra wide screens make the lotti smaller */
+  @media (min-width: 2560px) {
+    #lotti {
+      width: 65%;
+      height: 65%;
     }
   }
