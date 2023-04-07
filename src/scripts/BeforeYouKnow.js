@@ -2,6 +2,11 @@
 
 let Pre = [
     {
+        "Title" : "Before you go",
+        "Desc" : "Before going on an epic journey, you must know a few basic things such as training, vehicles, safety, launch, and recovery. These are the basic things you need to know before going on a space trip. If you have any questions, please contact us at 1-800-SPACE-TRAVEL. We are here to help you with any questions you may have. ",
+        "Image" : "./Image/AltPhotos/LRC-2014-01128_medium.jpg"
+    },
+    {
         "Title" : "Planning",
         "Desc" : "At our space travel company, we have a team of experienced professionals who carefully plan every aspect of the space travel experience. From choosing the ideal launch window to selecting the most efficient spacecraft for the journey, our planning process is thorough and detailed to ensure a safe and successful trip to space.",
         "Image" : "./Image/AltPhotos/LRC-2014-01128_medium.jpg"
@@ -41,13 +46,19 @@ let SLide = document.getElementById("Slide")
 let JsImg = document.getElementById("JsImg")
 let Anim = document.getElementById("Amin")
 
-let i = -1
+let i = 0
 
 // preload all images
 let images = Pre.map(function() { return new Image() })
 images.forEach(function(img, i) {
     img.src = Pre[i].Image
 })
+
+// when the page loads, show the first slide
+Title.innerHTML = Pre[i].Title
+Desc.innerHTML = Pre[i].Desc
+SLide.innerHTML = Pre[i].Title
+JsImg.src = Pre[i].Image
 
 Next.onclick = function() {
     if (i < Pre.length - 1) {
