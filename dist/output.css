@@ -4174,6 +4174,10 @@ html {
   padding-bottom: 4rem;
 }
 
+.pt-96 {
+  padding-top: 24rem;
+}
+
 .text-left {
   text-align: left;
 }
