@@ -4505,6 +4505,10 @@ html {
     align-items: stretch;
   }
 
+  .sm\:gap-0 {
+    gap: 0px;
+  }
+
   .sm\:overflow-visible {
     overflow: visible;
   }
@@ -4527,6 +4531,14 @@ html {
 
   .sm\:pl-5 {
     padding-left: 1.25rem;
+  }
+
+  .sm\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 4rem;
   }
 }
 
