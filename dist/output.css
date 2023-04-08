@@ -3659,6 +3659,10 @@ html {
   margin-top: 1.25rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -4164,6 +4168,10 @@ html {
 
 .pr-8 {
   padding-right: 2rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-left {
