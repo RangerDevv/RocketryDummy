@@ -4583,6 +4583,10 @@ html {
     width: 100%;
   }
 
+  .md\:w-\[3\] {
+    width: 3;
+  }
+
   .md\:scale-\[1\.6\] {
     --tw-scale-x: 1.6;
     --tw-scale-y: 1.6;
@@ -4633,6 +4637,16 @@ html {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:hover\:scale-125:hover {
