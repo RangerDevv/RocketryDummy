@@ -16,6 +16,13 @@ html {
     }
   }
 
+  /*  make the text bigger for wide screen */
+  @media (min-width: 3840px) {
+    :root {
+      font-size: 2.5rem;
+    }
+  }
+
 #Planet_Img {
   width: 75%;
   /* height: 100%; */
