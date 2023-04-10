@@ -10,6 +10,16 @@ html {
   background-color: #000000;
 }
 
+/* fallback when the background does not load */
+body {
+  background-image: url('../../Image/sky.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000000;
+}
+
 /* For screens larger than or equal to 1420px and smaller than 2560px */
 @media (min-width: 1420px) and (max-width: 2559px) {
   :root {
