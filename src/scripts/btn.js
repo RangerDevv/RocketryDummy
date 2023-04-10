@@ -187,7 +187,7 @@ window.onload = function() {
         Btn_5.style.display = "none"
         Btn_6.style.display = "none"
         // get a relavant image from unsplash
-        Image.src = "./Image/iss056e142871_alt_medium.jpg"
+        Image.src = "./Image/Pricing/OIG.d.jpg"
     }
 }
 
@@ -231,7 +231,7 @@ function Updte() {
         Btn_5.style.display = "none"
         Btn_6.style.display = "none"
         // get a relavant image from unsplash
-        Image.src = "./Image/iss056e142871_alt_medium.jpg"
+        Image.src = "./Image/Pricing/OIG.d.jpg"
     } if(Pg==2) {
         if (Curr_Pln == Plans[0]) {
             Btn_1.innerHTML = "SightSeeing"
@@ -272,7 +272,7 @@ function Updte() {
         Heading.innerHTML = "Select your destination"
         Desc.innerHTML = Curr_Plnt.Description
         Prev.style.display = "block"
-        Image.src = "./Image/KSC-20200828-PH-MWC01_0075_medium.jpg"
+        Image.src = "./Image/Pricing/OIG.nN9V7FcmZ11w19.jpg"
     } if(Pg==3) {
         Btn_1.innerHTML = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerHTML = "Pricing Plan: " + Curr_Pln.Title
@@ -294,7 +294,7 @@ function Updte() {
         Btn_4.style.display = "none"
         Btn_5.style.display = "none"
         Btn_6.style.display = "none"
-        Image.src = "./Image/201411230015HQ_medium.jpg"
+        Image.src = "./Image/Pricing/OIG.s5yrk.jpg"
     } if(Pg==4) {
         Btn_1.innerHTML = "Plant: " + Curr_Plnt.Title 
         Btn_2.innerHTML = "Pricing Plan: " + Curr_Pln.Title
@@ -316,7 +316,7 @@ function Updte() {
         Btn_4.style.display = "none"
         Btn_5.style.display = "none"
         Btn_6.style.display = "none"
-        Image.src = "./Image/NHQ202212160009_medium.jpg"
+        Image.src = "./Image/Pricing/OIG (5).jpg"
     }
 }
 

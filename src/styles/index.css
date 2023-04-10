@@ -2,26 +2,41 @@ html {
     scroll-behavior: smooth;
   }
 
-  /*  make everything bigger for ultrawide */
-  @media (min-width: 2560px) {
-    :root {
-      font-size: 1.75rem;
-    }
-  }
-  
-  /*  make the text bigger for macbook 16" */
-  @media (min-width: 3072px) {
-    :root {
-      font-size: 2rem;
-    }
-  }
+/* Make everything bigger for different screen sizes */
 
-  /*  make the text bigger for wide screen */
-  @media (min-width: 3840px) {
-    :root {
-      font-size: 2.5rem;
-    }
+/* For screens smaller than 1420px */
+:root {
+  font-size: 1rem;
+}
+
+/* For screens larger than or equal to 1420px and smaller than 2560px */
+@media (min-width: 1420px) and (max-width: 2559px) {
+  :root {
+    font-size: 1.2rem;
   }
+}
+
+/* For ultrawide screens with a minimum width of 2560px */
+@media (min-width: 2560px) {
+  :root {
+    font-size: 1.5rem;
+  }
+}
+
+/* For screens larger than or equal to 3072px and smaller than 3840px */
+@media (min-width: 3072px) and (max-width: 3839px) {
+  :root {
+    font-size: 2rem;
+  }
+}
+
+/* For screens larger than or equal to 3840px */
+@media (min-width: 3840px) {
+  :root {
+    font-size: 2.5rem;
+  }
+}
+
 
 #Planet_Img {
   width: 75%;

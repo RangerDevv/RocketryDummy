@@ -50,7 +50,7 @@
         <div>
             <p class="text-white text-center text-5xl font-extrabold mt-24" id="Heading">Select your Destination</p>
         </div>
-        <div class="flex flex-col md:flex-row pt-12 gap-x-40">
+        <div class="flex flex-col md:flex-row pt-12 gap-x-24">
             <div class="flex flex-row row-span-full md:flex-col gap-8 sm:pl-14 overflow-x-scroll sm:overflow-visible overflow-y-visible">
                     <button class="text-center text-white text-xl font-semibold hover:underline h-auto hover:decoration-red-600 transition ease-linear delay-300 outline-dashed btn bg-transparent block" id="Btn_1" onclick="Btn1Clk()">Gliding</button>
                     <button class="text-center text-white text-xl font-semibold hover:underline h-auto hover:decoration-red-600 transition ease-linear delay-300 outline-dashed btn bg-transparent block" id="Btn_2" onclick="Btn2Clk()">Earth</button>
@@ -60,7 +60,7 @@
                     <button class="text-center text-white text-xl font-semibold hover:underline h-auto hover:decoration-red-600 transition ease-linear delay-300 outline-dashed btn bg-transparent block" id="Btn_6" onclick="Btn6Clk()">Saturn</button>
             </div>
             <div class="text-white w-full p-3 sm:w-[32rem] text-lg flex flex-col text-left">
-                <li id="Desc" class="overflow-y-scroll h-96 w-full">Click on the text to select your destination then click the continue button.</li>
+                <li id="Desc" class="overflow-y-scroll h-96 w-96 sm:w-[25rem]">Click on the text to select your destination then click the continue button.</li>
                 <div class="flex gap-x-5 pt-5 overflow-x-scroll sm:overflow-visible">
                     <button class="btn btn-sm sm:btn-md btn-warning" id="Prev">Back</button>
                     <button class="btn btn-sm sm:btn-md btn-success" id="Next">Continue</button>
@@ -68,8 +68,8 @@
                     <p class="btn btn-sm sm:btn-md btn-primary text-white">Price:<span id="price">0</span></p>
                 </div>
             </div>
-            <div class=" hidden sm:block w-96 place-self-center">
-                <img id="Planet_Img" src="./Image/Planet4-removebg-preview.png" alt="Planet" class="w-full scale-125">    
+            <div class=" hidden sm:block place-self-center items-center mx-auto">
+                <img id="Planet_Img" src="./Image/Planet4-removebg-preview.png" alt="Planet" class="">    
             </div>
         </div>
     </div>
