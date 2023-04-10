@@ -8,7 +8,7 @@ html {
       font-size: 1.75rem;
     }
   }
-
+  
   /*  make the text bigger for macbook 16" */
   @media (min-width: 3072px) {
     :root {
