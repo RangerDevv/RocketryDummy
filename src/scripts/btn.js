@@ -22,8 +22,8 @@ let array = [
         "price": 500000
     },
     {
-        "Title": "Earth",
-        "Description": "Come experience the wonder and beauty of our home planet, Earth! As the only world with liquid water on its surface, Earth offers a unique environment that has allowed life to flourish for billions of years. With diverse habitats like deserts, forests, and tundras, there's always something new to discover. And don't forget about our trusty companion, the Moon! With its stable climate and fascinating geological features, the Moon adds even more excitement to your Earthly travels.",
+        "Title": "ISS",
+        "Description": "Welcome to the International Space Station (ISS), an incredible destination for adventurous space tourists! The ISS is an artificial satellite orbiting the Earth, providing a one-of-a-kind space experience for those looking to travel beyond our planet. As the largest object created by humans in space, the ISS offers spacious living quarters and laboratories for conducting scientific research in microgravity. With modules dedicated to various fields like biology, physics, and astronomy, visitors to the ISS can explore the wonders of the universe through the eyes of astronauts. The ISS orbits the Earth at a height of approximately 250 miles and travels at a breakneck speed of around 17,500 miles per hour, offering breathtaking views of our planet from space. This incredible feat of engineering and international cooperation among the United States, Russia, Europe, Japan, and Canada is a symbol of human ingenuity and represents our commitment to exploring and understanding the universe we live in. Don't miss out on the chance to embark on a once-in-a-lifetime space adventure to the ISS!",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
         "price": 1000000
@@ -73,7 +73,7 @@ let Plans = [
         "Description": "The standard plan would offer a more extensive trip on a larger and more advanced rocket. This plan might include multiple days in orbit, with opportunities for spacewalks and other activities. It would also include more comfortable accommodations and a wider range of food options. The price for this plan might be around $105,000. Maximum of 6 people per trip. Perfect for families or groups of friends. <br> <br> <h2 class='text-2xl'><strong>Rocket:</strong></h2> <br> The Comet Chaser: This agile and nimble rocket is built for chasing comets and other celestial objects in space. With its powerful engines and advanced maneuvering capabilities, the Comet Chaser can keep up with even the fastest-moving objects in space. Designed to accommodate 4-6 people, this rocket has a spacious interior and can carry up to 300kg of weight, making it perfect for small groups of friends or family on a mission to explore the cosmos and embark on a memorable journey.",
         "src":"./Image/AltPhotos/simon-lee-z1vpjHAq1o8-unsplash.jpg",
         "color": "#b6aa84",
-        "price":105000
+        "price":450000
     },
     {
         "Title": "Premium",
