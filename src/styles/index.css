@@ -7,6 +7,7 @@ html {
 /* For screens smaller than 1420px */
 :root {
   font-size: 1rem;
+  background-color: #000000;
 }
 
 /* For screens larger than or equal to 1420px and smaller than 2560px */
