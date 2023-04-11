@@ -14,9 +14,7 @@ html {
 
 /* fallback when the background does not load */
 body {
-  background-image: url('../../Image/sky.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-image: url('../../Image/Stars.gif');
   background-position: center;
   background-attachment: fixed;
   background-color: #000000;
