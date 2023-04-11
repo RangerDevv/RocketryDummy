@@ -178,6 +178,7 @@ window.onload = function() {
         Heading.innerHTML = "Select your pricing plan"
         Desc.innerHTML = Curr_Pln.Description
         Price.innerHTML = "0"
+        Distance.innerHTML = " No Planet Selected"
         Prev.style.display = "none"
         // use CSS styling to hide all that is not needed
         Btn_1.style.display = "block"
@@ -222,6 +223,7 @@ function Updte() {
         Heading.innerHTML = "Select your pricing plan"
         Desc.innerHTML = Curr_Pln.Description
         Price.innerHTML = "0"
+        Distance.innerHTML = " No Planet Selected"
         Prev.style.display = "none"
         // use CSS styling to hide all that is not needed
         Btn_1.style.display = "block"

@@ -3610,6 +3610,10 @@ html {
   z-index: 50;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .order-1 {
   order: 1;
 }
@@ -3657,6 +3661,10 @@ html {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -3711,6 +3719,10 @@ html {
   height: 100vh;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3757,6 +3769,10 @@ html {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .min-w-full {
